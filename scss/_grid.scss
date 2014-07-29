@@ -1,0 +1,176 @@
+/*************************************
+/** - aeComply - GRID & LAYOUT - *****
+*************************************/
+
+
+.wrap-width { 
+	max-width:1020px; width:100%;
+	margin-left:auto; margin-right:auto;
+	/*padding-left:1.5%; padding-right:1.5%;*/
+	@media screen and (max-width: 1060px) {
+		padding-left:1.5%;
+		padding-right:1.5%;
+		}
+	}
+	
+/**wrap-width-pad  - as above but includes padding top and bottom, use it for content blocks**/
+.wrap-width-pad {
+	@extend .wrap-width;
+	padding-top:30px;
+	padding-bottom:30px;
+	
+	@media screen and (max-width: 1060px) {
+		padding-left:1.5%;
+		padding-right:1.5%;
+		}
+	}
+
+.wrap-width-pad-bot {
+	@extend .wrap-width;
+	padding-top:0;
+	padding-bottom:30px;
+	}
+
+.wrap-width-xl {
+	@extend .wrap-width;
+	padding-top:45px;
+	padding-bottom:45px;
+	
+	@media screen and (max-width: 1060px) {
+		padding-left:1.5%;
+		padding-right:1.5%;
+		}
+	}
+	
+.half, .one-third, .two-third, .three, .one-fourth, .three-fourth, 
+.one-fifth, .two-fifth, .three-fifth, .four-fifth  {
+	float:left;
+	margin-right:3%; 
+	}
+
+div .half:last-of-type, .one-third:last-of-type, .two-third:last-of-type, .three:last-of-type, .one-fourth:last-of-type, .three-fourth:last-of-type, 
+.one-fifth:last-of-type, .two-fifth:last-of-type, .three-fifth:last-of-type, .four-fifth:last-of-type  {
+	float:left;
+	margin-right:0;
+	}
+
+.last-of-row { margin-right:0;}
+
+.full { width:100%;}
+
+.half {width:48.5%;}
+
+.one-third {width:31.3%;}
+
+.two-third {width:65%;}
+
+.one-fourth {width:25.5%;}
+
+.three-fourth {width:76.5%;}
+
+.one-fifth {width:20.5%;}
+
+.two-fifth {width:42%;}
+
+.three-fifth {width:54.5%; }
+
+.four-fifth {width:76%; }
+
+
+@media screen and (max-width: 768px) {
+	.half, .one-third, .two-third, .three, .one-fourth, .three-fourth, 
+.one-fifth, .two-fifth, .three-fifth, .four-fifth  {float: none;}
+
+	div .half:last-of-type, .one-third:last-of-type, .two-third:last-of-type, .three:last-of-type, .one-fourth:last-of-type, .three-fourth:last-of-type, 
+.one-fifth:last-of-type, .two-fifth:last-of-type, .three-fifth:last-of-type, .four-fifth:last-of-type  {
+	float: none;}
+	
+	.one-third {width:100%;}
+
+	.two-third {width:100%;}
+	
+	.two-fifth {width:100%;}
+	
+	.three-fifth {width:100%; }
+	
+	.one-third {width:100%;}
+	
+	.one-fifth {width:20.5%; }
+
+	.four-fifth {width:76%;}
+	
+	.half {width:100%;}
+	
+	}
+	
+
+/*******************************
+/**          - DASHBOARD -                **
+*******************************/
+	
+/* Kills / reset media queries for user area / dashboard*/
+.dashboard {
+	.wrap-width { 
+		width:1020px; 
+		margin-left:auto; margin-right:auto;}
+		
+	.wrap-width-pad {
+		@extend .wrap-width;
+		padding-top:30px;
+		padding-bottom:30px;}
+	
+	.wrap-width-pad-bot {
+		@extend .wrap-width;
+		padding-top:0;
+		padding-bottom:30px;}
+	
+	.wrap-width-xl {
+		@extend .wrap-width;
+		padding-top:45px;
+		padding-bottom:45px;}
+		
+	.half, .one-third, .two-third, .three, .one-fourth, .three-fourth, 
+	.one-fifth, .two-fifth, .three-fifth, .four-fifth  {
+		float:left;
+		margin-right:3%;}
+	
+	div .half:last-of-type, .one-third:last-of-type, .two-third:last-of-type, .three:last-of-type, .one-fourth:last-of-type, .three-fourth:last-of-type, 
+	.one-fifth:last-of-type, .two-fifth:last-of-type, .three-fifth:last-of-type, .four-fifth:last-of-type  {
+		float:left;
+		margin-right:0;}
+	
+	.last-of-row { margin-right:0;}
+	
+	.full { width:100%;}
+	
+	.half {width:48.5%;}
+	
+	.one-third {width:31.3%;}
+	
+	.two-third {width:65%;}
+	
+	.one-fourth {width:25.5%;}
+	
+	.three-fourth {width:76.5%;}
+	
+	.one-fifth {width:20.5%;}
+	
+	.two-fifth {width:42%;}
+	
+	.three-fifth {width:54.5%; }
+	
+	.four-fifth {width:76%; }
+
+
+}
+/** eo dashboard **/
+
+
+
+
+
+
+
+
+
+

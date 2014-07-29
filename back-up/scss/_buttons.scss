@@ -1,0 +1,218 @@
+/************************~~**
+/** - aeComply - BUTTONS **
+***********************~~***/
+
+@mixin btn-theme ($btn-color) {
+   background-color: $btn-color;
+   border-color: #006699 1px solid;
+   color:#FFF;
+   &:hover {
+	   background-color:darken($btn-color, 4%);
+	   border-color: darken($btn-color,20%);
+	   }
+   &:active {
+	   background-color:$btn-color;
+	   border-color:darken ($btn-color, 20%);
+	   }
+}
+
+
+.btn {
+	padding:18px 18px;
+	display:inline-block;
+	text-decoration:none;
+	/*box-shadow: 0 .375em .313em -0.313em rgba(0,0,0,.8), inset 0 .063em rgba(255,255,255,.4), inset 0 -0.188em rgba(0,0,0,.15);*/
+	font-weight:bold;
+	font-size:18px;
+	}
+
+a.reg-btn {color:#FFF;}
+
+.reg-btn {
+	padding:7px 26px;
+	display:inline-block;
+	}
+
+.form-btn {
+	padding:12px 12px;
+	display:inline-block;
+	text-decoration:none;
+	border:none;
+	font-size:18px;
+	-webkit-appearance: none;
+	}
+
+.blue {
+	@include btn-theme($brand-blue);
+	border:darken($brand-blue, 4%) 1px solid;
+	}
+
+a.blue:hover {
+	color:#AAF2FF;
+	border:darken($brand-blue, 5%) 1px solid;
+	}
+
+a.blue:active {
+	color:#AAF2FF;
+	border:darken($brand-blue, 1%) 1px solid;
+	}
+
+.dark-blue {
+	@include btn-theme($dark-blue);
+	border:darken($dark-blue, 1%) 1px solid;
+	}
+
+.dark-blue:hover { background-color:#00697B;}
+
+.darker-blue {
+	@include btn-theme($darker-blue);
+	border:darken($darker-blue, 1%) 1px solid;
+	}
+
+.darker-blue:hover {background-color:#00697B;}
+
+.green {
+	@include btn-theme($brand-green);
+	border:darken($brand-green, 4%) 1px solid;
+	}
+
+a.green:hover {color:#E2F3B6;}
+
+
+.btnborder {
+	border:#FFF 1px solid;
+	color:#FFF;
+	background-color:transparent;
+	white-space:nowrap; 
+	@media screen and (max-width: 768px) {
+		white-space:normal;}
+	}
+
+.btnborder:hover {
+	color: #FDECD9;
+	background-color:$cta-button;
+	border:darken($cta-button,10%) 1px solid;
+	}
+
+.btnborder:active {
+	color: #FDECD9;
+	background-color:lighten($cta-button, 5%);
+	border:darken($cta-button,10%) 1px solid;
+	}
+	
+	
+
+.cta-btn {
+	@include btn-theme($cta-button);
+	border:darken($cta-button, 4%) 1px solid;
+	}
+
+.cta-btn:hover {color:#FFF;}
+
+.centre-btn {
+	@include btn-theme($cta-button);
+	border:darken($cta-button, 4%) 1px solid;
+	width:450px;
+	margin:30px 0 30px 27%;
+	text-align:center;
+	}
+	
+.centre-btn:hover { color:#FFF;}
+
+
+@media screen and (max-width: 995px) {
+		.btn {
+		padding:3.5% 3.5%;
+		font-size:16px;
+		}
+		
+		.form-btn {
+			padding:12px 12px;
+			display:inline-block;
+			text-decoration:none;
+			border:none;
+			font-size:16px;
+		}
+		
+		.centre-btn {
+			@include btn-theme($cta-button);
+			border:darken($cta-button, 4%) 1px solid;
+			width:400px;
+			margin:30px 0 30px 27%;
+			text-align:center;
+		}
+		
+		.btn.centre-btn {padding:2.5% 2.5%;}
+	}
+
+@media screen and (max-width: 880px) {
+		.hero .btn {
+		padding:3% 3%;
+		font-size:16px;
+		width:100%;
+		margin-bottom:15px;
+		}
+		
+		.form-btn {
+			padding:12px 12px;
+			display:inline-block;
+			text-decoration:none;
+			border:none;
+			font-size:16px;
+		}
+		
+		.centre-btn {
+			@include btn-theme($cta-button);
+			border:darken($cta-button, 4%) 1px solid;
+			width:350px;
+			margin:30px 0 30px 27%;
+			text-align:center;
+		}
+		
+		.btn.centre-btn {padding:2.5% 2.5%;}
+	}
+
+@media screen and (max-width: 768px) {
+		.hero .btn {
+		padding:3% 3%;
+		font-size:20px;
+		width:45%;
+		margin-bottom:15px;
+		}
+		
+		.form-btn {
+			font-size:15px;
+		}
+		
+		.centre-btn {
+			@include btn-theme($cta-button);
+			border:darken($cta-button, 4%) 1px solid;
+			width:300px;
+			margin:30px 0 30px 27%;
+			text-align:center;
+		}
+		
+		.btn.centre-btn {padding:2.5% 2.5%;}
+	}
+
+@media screen and (max-width: 529px) {
+		.hero .btn {
+		padding:5% 3%;
+		width:100%;
+		font-size:18px;
+		text-align:center;
+		}
+		
+		.form-btn {font-size:15px;}
+		
+		.centre-btn {
+			@include btn-theme($cta-button);
+			border:darken($cta-button, 4%) 1px solid;
+			margin:30px 0 0 0;
+			width:100%;
+			text-align:center;
+		}
+		
+		.btn.centre-btn {padding:2.5% 2.5%;}
+	}
+

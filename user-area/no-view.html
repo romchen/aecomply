@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js ie6 oldie"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js ie7 oldie"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js ie8 oldie"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>aeComply LEX - No Archives</title>
+        <meta name="description" content="aeComply Plus">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+
+        <link rel="stylesheet" href="../css/style.css">
+        <script src="../js/modernizr-2.6.2.min.js"></script>
+    </head>
+    <body class="dashboard">
+    
+    	<hgroup class="main">
+    		<div class="pre-head">
+            	<div class="wrap-width">
+                    <ul>
+                    <li><a href="#">aecomplyLEX.com</a></li>
+                        <li>User name goes here</li>
+                      <li><a href="#">Log off</a></li>
+                  </ul>
+              </div>
+            </div>
+            <div class="main-head">
+            	<div class="wrap-width">
+                	<h1 class="logo"><a href="dashboard.html"><img src="../img/aecomplylex-logo.png" alt="aecomply FLEX logo"></a></h1>
+                    <div class="contact-head">
+                    	<p class="hours"><span>MONDAY TO FRIDAY:</span> 9:00AM - 5:00PM</p>
+                    	<p class="head-details">
+                        	<span class="head-email">
+                            	<a href="mailto:support@aecomply.com">support@aecomply.com</a></span>
+                            <span class="head-tel">9999 999 9999</span>
+                        </p>
+                    	<a class="s-btn cta-btn btn-c-align upcase" href="#"><span class="aff-go">Contact us now</span></a>
+                    </div><!--eo contact-head-->
+                </div><!--wrap-width-->
+            </div><!--eo main-head-->
+        </hgroup>
+        
+        <nav class="main-nav-dash">
+        	<div class="wrap-width">
+            	<ul>
+                	<li><a class="index-btn" href="../index.html">HOME</a></li>
+                  <div class="report-nav-dash">
+                      <li><span class="report-head">MY REPORT:</span></li>
+                      <li><a href="#">VIEW</a></li>
+                      <li><a href="#">EDIT</a></li>
+                      <li><a href="#">ARCHIVES</a></li>
+                  </div>
+                  <li><a class="cm-link-nav" href="#"><span class="aff-go">COST MODELLER</span></a></li>
+                  
+                  <div class="sec-nav-dash">
+                      <li><a href="../about.html">GLOSSARY</a></li>
+                      <li><a href="#">ACCOUNT</a></li>
+                      <li><a href="#">HELP</a></li>
+                  </div>
+               </ul>
+             </div><!--eo wrap-width-->
+        </nav>
+        
+        <div class="page-info-dash">
+        	<div class="wrap-width clearfix">
+                <h2 class="view-ico-page">AECOMPLY LEX VIEW REPORT</h2>
+            </div>
+        </div><!--eo page-info-->
+
+        <div class="wrap-width question-cell no-prog clearfix">
+            <div class="full">
+                <div class="no-content no-view">
+                    <h2>You have no reports to view yet</h2>
+                    <p>The report view section is where you will be able to see that latest published version of your report.</p>
+                    <div>
+                        <p>What do you want to do now?</p>
+                        <ul class="btn-group clearfix">
+                            <li><button class="full-btn-m btn-c-align blue  upcase" href="#">Go to dashboard</button></li>
+                            <li><button class="full-btn-m btn-c-align cta-btn upcase" href="#"><span class="aff-go">Start a report now</span></button></li>
+                        </ul>
+                    </div>
+                </div><!--eo no-content-->
+            </div><!--eo full-->
+        </div><!--eo wrap-width-->
+
+        <footer>
+            <div class="main-footer clearfix"></div><!--pre-footer-->
+            <div class="sub-footer"></div><!--pre-footer-->
+        </footer>
+
+         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script> 
+        <script type="text/javascript">
+            $(document).ready(function(){
+
+                $("#contactLink").click(function(){
+                    if ($("#contactForm").is(":hidden")){
+                        $("#contactForm").slideDown("slow")
+						$("#contactLink").removeClass("blue").addClass("blue stretch")
+						;
+                    }
+                    else{
+                        $("#contactForm").slideUp("slow")
+						$("#contactLink").removeClass("blue stretch").addClass("blue")
+						;
+                    }
+                });
+				
+				$(".reminder .cta-btn").click(function(){
+						  $('html, body').animate({ scrollTop: 0 }, 'slow');
+						   
+                    if ($("#contactForm").is(":hidden")){
+                        $("#contactForm").delay(700).slideDown("slow")
+						$("#contactLink").removeClass("blue").addClass("blue stretch")
+						;
+                    }
+				
+				$('#contactLink').click(function(){
+					$("#contactLink").removeClass("stretch")
+					});	
+					
+				})
+				
+				
+                
+            });
+            
+            function closeForm(){
+                $("#messageSent").show("slow");
+                setTimeout('$("#messageSent").hide();$("#contactForm").slideUp("slow")', 4000);
+           }
+		   
+		   $('textarea, input:text').bind('focus click', function(){
+        if (this.value == this.defaultValue) {
+        this.value = '';
+        }
+    }).bind('blur', function(){
+        if (this.value == '') {
+        this.value = this.defaultValue;
+        }
+		
+		
+    });
+        </script>
+        
+   <script type="text/javascript">
+		$("#nav").addClass("js").before('<div id="mobile-menu">Menu </div>');
+		$("#mobile-menu").click(function(){
+			$("#nav").slideToggle();
+		});
+		$("#mobile-menu").click(function(){
+			$("#contactForm").slideUp();
+		});
+		$(window).resize(function(){
+			if(window.innerWidth > 768) {
+				$("#nav").removeAttr("style");
+			}
+		});
+	</script>
+       
+
+    </body>
+</html>
