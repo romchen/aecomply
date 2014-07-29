@@ -3,7 +3,7 @@
 .pattern-library {
 	font-family:'Open Sans' , sans-serif; 
 	background-color:#EFF0F4;
-	h2, h3, h4, p  {font-family:'Open Sans', sans-serif; }
+	h2, h3, h4, p, button  {font-family:'Open Sans', sans-serif; }
 	h2 {font-weight:600; font-size:24px;}
 	h3 {font-weight:400; font-size:22px;}
 	h4 { color:#868686;
@@ -217,6 +217,13 @@ a.reg-btn {color:#FFF;}
 	font-size:18px;
 	-webkit-appearance: none;
 	}
+
+
+.blue-link {
+	background:none; 
+	border:none; 
+	font-size:18px; 
+	color:$brand-blue;}
 
 
 /* Button colours and states
@@ -514,15 +521,11 @@ table {
 		}
 	}
 	
-
-
-
 .scheme-summary-table { 
 	width: 100%;
 	margin:30px 0;
 	position: relative;
 	td,th {
-		height: auto;
 		border:#fff 1px solid; 
 		text-align:center;
 		padding:20px 0 20px 0;
@@ -533,6 +536,7 @@ table {
 		  color:#fff; 
 		  font-weight:400;}
 	  tr {
+		  height:90px;
 		  font-size:14px;
 		  &:nth-of-type(odd) {background-color:#EBF6F2;}
 		  .alert {
@@ -614,15 +618,15 @@ p.alert-box {
 		margin-bottom:15px;
 		background:url(../img/dashboard/speech-ico-small.png) no-repeat 0% 50%; 
 		padding-left:40px;}
-	p {
-		font-size:16px;
+	article {
 		&.note-arrow {
-			background:url(../img/dashboard/note-side-arrow.png) no-repeat;
-			margin-left:-50px;
-			padding-left:50px;
-			}	
+		background:url(../img/dashboard/note-side-arrow.png) no-repeat;
+		margin-left:-50px;
+		padding-left:50px;}	
+		p {font-size:16px;}	
 		}
 	}
+	
 
 
 #basic-modal-content {display:none;}

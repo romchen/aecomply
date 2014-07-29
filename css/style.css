@@ -2309,7 +2309,7 @@ ul.foot-nav li {
   font-family: 'Open Sans' , sans-serif;
   background-color: #EFF0F4;
 }
-.pattern-library h2, .pattern-library h3, .pattern-library h4, .pattern-library p {
+.pattern-library h2, .pattern-library h3, .pattern-library h4, .pattern-library p, .pattern-library button {
   font-family: 'Open Sans', sans-serif;
 }
 .pattern-library h2 {
@@ -2540,6 +2540,13 @@ a.reg-btn {
   border: none;
   font-size: 18px;
   -webkit-appearance: none;
+}
+
+.blue-link {
+  background: none;
+  border: none;
+  font-size: 18px;
+  color: #00abc7;
 }
 
 /* Button colours and states
@@ -2978,7 +2985,6 @@ table tr.odd-cell {
   position: relative;
 }
 .scheme-summary-table td, .scheme-summary-table th {
-  height: auto;
   border: #fff 1px solid;
   text-align: center;
   padding: 20px 0 20px 0;
@@ -2990,6 +2996,7 @@ table tr.odd-cell {
   font-weight: 400;
 }
 .scheme-summary-table tr {
+  height: 90px;
   font-size: 14px;
 }
 .scheme-summary-table tr:nth-of-type(odd) {
@@ -3101,13 +3108,13 @@ p.alert-box strong {
   background: url(../img/dashboard/speech-ico-small.png) no-repeat 0% 50%;
   padding-left: 40px;
 }
-.note-box p {
-  font-size: 16px;
-}
-.note-box p.note-arrow {
+.note-box article.note-arrow {
   background: url(../img/dashboard/note-side-arrow.png) no-repeat;
   margin-left: -50px;
   padding-left: 50px;
+}
+.note-box article p {
+  font-size: 16px;
 }
 
 #basic-modal-content {
