@@ -322,7 +322,6 @@ html {
 }
 
 body {
-  /*font-family: 'Droid Sans', sans-serif;*/
   font-family: 'Open Sans' , sans-serif;
 }
 
@@ -2940,6 +2939,23 @@ table tr.odd-cell {
   padding: 20px 0;
 }
 .radio-form-ptn td input {
+  text-align: center;
+}
+
+.radio-form-txt-ptn {
+  margin: 30px 0;
+}
+.radio-form-txt-ptn table {
+  width: 100%;
+  font-size: 16px;
+  color: #819D93;
+}
+.radio-form-txt-ptn td {
+  width: 90%;
+  text-align: left;
+  padding: 20px 0 20px 20px;
+}
+.radio-form-txt-ptn td input {
   text-align: center;
 }
 

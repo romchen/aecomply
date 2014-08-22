@@ -18,8 +18,7 @@ html {
 	vertical-align: text-top;
 }
 
-body { /*font-family: 'Droid Sans', sans-serif;*/
-font-family:'Open Sans' , sans-serif;  }
+body { font-family:'Open Sans' , sans-serif;  }
 
 .pre-head, .main-head {padding-right:1.5%;}
 
@@ -30,6 +29,7 @@ section {width:100%; }
 h1, h2, h3, h4  {
 	font-family:'Open Sans', sans-serif;
 	font-weight:400px;
+	
 	}
 
 
@@ -1519,8 +1519,8 @@ ul.foot-nav li {margin-bottom:10px;}
 		strong {
 			font-weight:400;
 			padding-left:30px;
-			&.red-alert {background:url(../img/dashboard/red-alert-small.png) no-repeat;}
-			&.green-alert {background:url(../img/dashboard/green-alert-small.png) no-repeat;}
+			&.red-alert {background:url(../img/dashboard/red-alert-small.png) no-repeat 0 50%;}
+			&.green-alert {background:url(../img/dashboard/green-alert-small.png) no-repeat 0 50%;}
 			}
 		em {font-style:italic; font-size:15px; margin-left:20px;}
 		a {
